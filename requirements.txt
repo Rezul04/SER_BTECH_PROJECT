@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+librosa==0.10.2.post1
+audiomentations==0.38.0
+pillow
+tqdm
+pyyaml
+soundfile
+torch
+torchvision
+torchaudio
