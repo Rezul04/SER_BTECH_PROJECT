@@ -10,7 +10,6 @@ simple baselines, and a fusion model.
 - `features/acoustic/` (auto-generated .npz feature files)
 - `features/specs/` (auto-generated spectrogram PNGs)
 - `splits/` (metadata + train/val/test CSVs)
-- `models/` (saved PyTorch checkpoints)
 - `src/` (scripts)
 
 ## Quick start
@@ -22,10 +21,6 @@ simple baselines, and a fusion model.
    - `python src/make_spectrograms.py`
    - `python src/extract_acoustic.py`
    - `python src/make_splits.py`
-5. Train baselines or fusion model:
-   - `python src/train_vgg_spec.py`
-   - `python src/train_cnn1d_acoustic.py`
-   - `python src/train_fusion.py`
 
 ## Notes
 - The scripts are written for clarity over micro-optimizations; adapt paths/hyperparams as needed.
