@@ -22,5 +22,5 @@ for path in tqdm.tqdm(meta["path"].tolist()):
     feats = pad_trunc(feats)
     feats = feats.T.astype(np.float32)
     rel = pathlib.Path(path).with_suffix(".npz").name
-    np.savez_compressed(out_dir / rel, x=feats)
+    np.savez_compressed(out_dir / rel, features=feats)
 print("Acoustic features saved to features/acoustic/")
